@@ -1,0 +1,80 @@
+/* ListEngage design system tokens (from the ListEngage design system artifact). Fonts load from Google Fonts in docusaurus.config.ts. */
+:root, [data-theme="light"] {
+  --surface: #ffffff; /* Page background. The guidelines approve layouts and the logo on white or charcoal only. */
+  --surface-raised: #e9e9e9; /* Panels, cards and table stripes on `surface` (Greys pastel in Light; Orange's charcoal in Charcoal). */
+  --ink: #222222; /* Headlines and strong text on `surface` and `surface-raised` (15.9:1 / 13.1:1 in Light; 13.1:1 / 11.3:1 in Charcoal). */
+  --ink-body: #595959; /* Paragraphs and lists — the guidelines' 'mid-tone grey' that sets body apart from headlines. On `surface` 7.0:1 (Light) / 9.4:1 (Charcoal); on `surface-raised` 5.8:1 / 8.2:1. */
+  --border: #c7c7c7; /* Hairline dividers and card edges. Decorative only: under 3:1, so never the sole boundary of a control. */
+  --link: var(--blue-gradient-dark); /* Links and text buttons on `surface` (6.8:1 Light, 5.4:1 Charcoal). Solid Blue fails on white (2.9:1), so Light uses Blue's gradient-dark. */
+  --focus-ring: var(--blue-gradient-dark); /* 2px solid focus outline on every surface; ≥3:1 in both themes. Chosen for this system, not in the brand files. */
+  --headline-accent: var(--purple); /* Coloured headlines that must stay legible at any size: Purple on white (9.9:1), Orange on charcoal (5.2:1). For other brand colours on headlines see each solid's note. */
+  --action: var(--grey-gradient-dark); /* Primary button fill: charcoal on Light (the email's buttons), orange on Charcoal so it stands off the ground. */
+  --on-action: #ffffff; /* Text on `action`: white on charcoal (15.9:1), charcoal on orange (5.2:1). */
+  --on-charcoal: #ffffff; /* Text on charcoal panels and `gradient-grey` in either theme (9.6:1 at the light end). */
+  --on-orange: #222222; /* Text on the `orange` fill (5.2:1). White on orange is only 3.1:1 — avoid it for text. */
+  --on-blue: #222222; /* Text on the `blue` fill (5.4:1). White on blue is only 2.9:1. */
+  --on-green: #222222; /* Text on the `green` fill (6.0:1). White on green is only 2.7:1. */
+  --on-purple: #ffffff; /* Text on the `purple` fill (9.9:1) — the blog's callout box and purple button. */
+  --on-pastel: #222222; /* Text on any `*-pastel` panel, in either theme (pastels stay light). */
+  --blue-font: #222222; /* The 'Font' grey paired with Blue in the brand colour sheet. Represents Salesforce. Conveys trust, technology, and digital clouds. */
+  --blue: #21a0df; /* Blue solid. Represents Salesforce. Conveys trust, technology, and digital clouds. On white 2.9:1 — fails for text at any size; use for fills, icons on charcoal and headlines on charcoal (5.4:1). */
+  --blue-pastel: #bfdfef; /* Blue pastel: tinted backgrounds behind `ink` / `ink-body` text. */
+  --blue-gradient-light: #009ee2; /* Blue gradient start (light end). */
+  --blue-gradient-dark: #005caa; /* Blue gradient end (dark end). Also the accessible blue for text on white (6.8:1). */
+  --orange-font: #2d2d2d; /* The 'Font' grey paired with Orange in the brand colour sheet. Represents ListEngage. Conveys boldness, respect, innovation, and creativity. */
+  --orange: #e2752b; /* Orange solid. Represents ListEngage. Conveys boldness, respect, innovation, and creativity. On white 3.1:1 — headlines 24px+ only; on charcoal 5.2:1. Lead colour when ListEngage is the focus. */
+  --orange-pastel: #f3e8e0; /* Orange pastel: tinted backgrounds behind `ink` / `ink-body` text. */
+  --orange-gradient-light: #f8b133; /* Orange gradient start (light end). */
+  --orange-gradient-dark: #e84e1b; /* Orange gradient end (dark end). */
+  --green-font: #393939; /* The 'Font' grey paired with Green in the brand colour sheet. Represents our clients (Salesforce users). Conveys the feeling of profitability and growth. */
+  --green: #3ab46f; /* Green solid. Represents our clients (Salesforce users). Conveys the feeling of profitability and growth. On white 2.7:1 — fails for text; fills and charcoal headlines (6.0:1). Lead colour when clients are the focus. */
+  --green-pastel: #c6e4d3; /* Green pastel: tinted backgrounds behind `ink` / `ink-body` text. */
+  --green-gradient-light: #93c01f; /* Green gradient start (light end). */
+  --green-gradient-dark: #00aca3; /* Green gradient end (dark end). */
+  --purple-font: #595959; /* The 'Font' grey paired with Purple in the brand colour sheet. Represents our industry as a whole, conveys timelessness and stability. */
+  --purple: #542d89; /* Purple solid. Represents our industry as a whole, conveys timelessness and stability. On white 9.9:1 — the safest coloured headline on light grounds; on charcoal 1.6:1, never text there. The blog's callout box is purple. */
+  --purple-pastel: #e6daf7; /* Purple pastel: tinted backgrounds behind `ink` / `ink-body` text. */
+  --purple-gradient-light: #935da6; /* Purple gradient start (light end). */
+  --purple-gradient-dark: var(--purple); /* Purple gradient end — the same value as the Purple solid. */
+  --grey-font: #919191; /* The 'Font' grey paired with Greys in the brand colour sheet. Neutral colors for a variety of uses; darker greys convey boldness, lighter greys friendliness and modernity. */
+  --grey: #c7c7c7; /* Greys solid. Neutral colors for a variety of uses; darker greys convey boldness, lighter greys friendliness and modernity. Solid grey: dividers and disabled fills; 1.7:1 on white, never text on light grounds; 9.4:1 on charcoal. */
+  --grey-pastel: #e9e9e9; /* Greys pastel: tinted backgrounds behind `ink` / `ink-body` text. */
+  --grey-gradient-light: #444545; /* Greys gradient start; also the Charcoal theme's `border`. */
+  --grey-gradient-dark: #222222; /* Greys gradient end; the charcoal ground of the Charcoal theme and the business cards. */
+}
+[data-theme="charcoal"] {
+  --surface: #222222;
+  --surface-raised: #2d2d2d;
+  --ink: #e9e9e9;
+  --ink-body: #c7c7c7;
+  --border: #444545;
+  --link: var(--blue);
+  --focus-ring: var(--blue);
+  --headline-accent: var(--orange);
+  --action: var(--orange);
+  --on-action: #222222;
+  --purple-gradient-dark: var(--purple);
+}
+:root {
+  --space-1: 8px; /* Gap between a label and its control; icon-to-text gap. proposed — not from the brand files; adjust once real values exist. */
+  --space-2: 16px; /* Paragraph spacing; padding inside small cards and buttons. proposed — not from the brand files; adjust once real values exist. */
+  --space-3: 24px; /* Card padding; gap between cards. proposed — not from the brand files; adjust once real values exist. */
+  --space-4: 40px; /* Gap between page sections; slide margins. proposed — not from the brand files; adjust once real values exist. */
+  --radius-none: 0; /* Buttons, full-bleed bands, banners, callouts and colour blocks — square, as in the email examples, business cards and covers. */
+  --radius-sm: 3px; /* Pixel squares and small tags — echoes the slightly softened logo pixels. Proposed — not from the brand files. */
+  --radius-md: 8px; /* Reserved for on-screen surfaces that need softening (e.g. images in a gallery). The components stay square. Proposed — not from the brand files. */
+  --gradient-blue: linear-gradient(90deg, #009ee2, #005caa); /* Salesforce-focused bands and covers. */
+  --gradient-orange: linear-gradient(90deg, #f8b133, #e84e1b); /* ListEngage-focused bands, covers and business-card fronts. */
+  --gradient-green: linear-gradient(90deg, #93c01f, #00aca3); /* Client-focused bands and case studies. */
+  --gradient-purple: linear-gradient(90deg, #935da6, #542d89); /* Industry-wide topics. */
+  --gradient-grey: linear-gradient(90deg, #444545, #222222); /* Charcoal grounds behind white or colour logos. */
+  --font-heading: Lato, Arial, sans-serif;
+  --font-body: Quicksand, Arial, sans-serif;
+  --font-dash: "Quicksand Dash", Quicksand, Arial, sans-serif;
+  --text-headline-main: 400 40px/48px var(--font-heading); /* Main headlines: Lato, set in ALL CAPS, in `ink` or a brand colour. Size proposed — not from the brand files; adjust once real values exist. */
+  --text-headline-secondary: 400 28px/36px var(--font-heading); /* Secondary headlines: Lato, Title Case, smaller than main. Size proposed — not from the brand files; adjust once real values exist. */
+  --text-headline-tertiary: 400 20px/28px var(--font-heading); /* Tertiary headlines: Lato, Title Case, smaller again. Size proposed — not from the brand files; adjust once real values exist. */
+  --text-body: 400 16px/26px var(--font-body); /* Paragraphs and lists in `ink-body`. Size proposed — not from the brand files; adjust once real values exist. */
+  --text-body-small: 400 14px/22px var(--font-body); /* Secondary copy in `ink-body`. Size proposed — not from the brand files; adjust once real values exist. */
+  --text-label: 700 12px/16px var(--font-body); /* Small labels and eyebrows; Quicksand Bold keeps 12px legible. Size proposed — not from the brand files; adjust once real values exist. */
+}

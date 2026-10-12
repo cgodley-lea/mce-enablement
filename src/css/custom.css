@@ -1,0 +1,215 @@
+/* Maps the ListEngage tokens onto Docusaurus (Infima) and styles the course components.
+   Rule: no raw colour values here. Every colour comes from tokens.css. */
+
+:root {
+  --ifm-color-primary: var(--blue-gradient-dark);
+  --ifm-color-primary-dark: var(--blue-gradient-dark);
+  --ifm-color-primary-darker: var(--blue-gradient-dark);
+  --ifm-color-primary-darkest: var(--blue-gradient-dark);
+  --ifm-color-primary-light: var(--blue-gradient-dark);
+  --ifm-color-primary-lighter: var(--blue-gradient-dark);
+  --ifm-color-primary-lightest: var(--blue-gradient-dark);
+
+  --ifm-background-color: var(--surface);
+  --ifm-font-family-base: var(--font-body);
+  --ifm-heading-font-family: var(--font-heading);
+  --ifm-font-color-base: var(--ink-body);
+  --ifm-heading-color: var(--ink);
+  --ifm-heading-font-weight: 400;
+  --ifm-link-color: var(--link);
+  --ifm-link-hover-color: var(--link);
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+
+  --ifm-global-radius: var(--radius-none);
+  --ifm-button-border-radius: var(--radius-none);
+  --ifm-code-border-radius: var(--radius-sm);
+  --ifm-pagination-nav-border-radius: var(--radius-none);
+  --ifm-alert-border-radius: var(--radius-none);
+  --ifm-toc-border-color: var(--border);
+  --ifm-hr-background-color: var(--border);
+  --ifm-table-border-color: var(--border);
+  --ifm-table-stripe-background: var(--surface);
+  --ifm-table-head-background: var(--grey-pastel);
+  --ifm-code-background: var(--grey-pastel);
+
+  --ifm-navbar-background-color: var(--surface);
+  --ifm-navbar-link-color: var(--ink);
+  --ifm-navbar-link-hover-color: var(--link);
+  --ifm-navbar-height: 4rem;
+
+  --ifm-menu-color: var(--ink-body);
+  --ifm-menu-color-active: var(--ink);
+  --ifm-menu-color-background-active: var(--grey-pastel);
+  --ifm-menu-color-background-hover: var(--grey-pastel);
+  --ifm-menu-border-radius: var(--radius-none);
+
+  --ifm-footer-background-color: var(--grey-gradient-dark);
+  --ifm-footer-color: var(--on-charcoal);
+}
+
+body {
+  background: var(--surface);
+  color: var(--ink-body);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+}
+.navbar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background: var(--gradient-blue);
+}
+.navbar__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.navbar__logo {
+  height: 2rem;
+}
+.navbar__link {
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+/* ---------- Doc type ---------- */
+.markdown h1,
+article header h1 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+.markdown h2 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-top: var(--space-4);
+  color: var(--ink);
+}
+.markdown h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+.markdown h2 + p,
+.markdown p {
+  color: var(--ink-body);
+}
+.markdown strong {
+  color: var(--ink);
+}
+.markdown ul > li::marker {
+  color: var(--blue-gradient-dark);
+}
+
+/* Tables: square, hairline, grey head */
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.markdown table thead tr {
+  background: var(--grey-pastel);
+  border-bottom: 2px solid var(--ink);
+}
+.markdown table th {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--ink);
+  text-align: left;
+}
+.markdown table td,
+.markdown table th {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 10px 12px;
+  vertical-align: top;
+}
+
+/* ---------- Admonitions: square, pastel panels ---------- */
+.theme-admonition {
+  border-radius: var(--radius-none);
+  border: none;
+  border-left: 4px solid var(--ink);
+  box-shadow: none;
+  color: var(--on-pastel);
+}
+.theme-admonition-tip {
+  background: var(--purple-pastel);
+  border-left-color: var(--purple);
+}
+.theme-admonition-info,
+.theme-admonition-note {
+  background: var(--blue-pastel);
+  border-left-color: var(--blue-gradient-dark);
+}
+.theme-admonition-warning,
+.theme-admonition-caution {
+  background: var(--orange-pastel);
+  border-left-color: var(--orange-gradient-dark);
+}
+.theme-admonition-danger {
+  background: var(--orange-pastel);
+  border-left-color: var(--orange-gradient-dark);
+}
+.theme-admonition [class*='admonitionHeading'] {
+  font-family: var(--font-heading);
+  text-transform: none;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.theme-admonition [class*='admonitionIcon'] svg {
+  fill: var(--ink);
+}
+
+/* ---------- Sidebar ---------- */
+.menu__link {
+  font-size: 14.5px;
+}
+.menu__list-item-collapsible .menu__link--sublist {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* ---------- Pagination ---------- */
+.pagination-nav__link {
+  border-radius: var(--radius-none);
+  border-color: var(--border);
+}
+.pagination-nav__link:hover {
+  border-color: var(--ink);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: var(--gradient-grey);
+}
+.footer__copyright {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--on-charcoal);
+}

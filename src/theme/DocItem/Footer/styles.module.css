@@ -1,0 +1,34 @@
+.complete {
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--grey);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1);
+}
+.isDone {
+  border-left-color: var(--green-gradient-dark);
+  background: var(--green-pastel);
+}
+.label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+}
+.label input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--grey-gradient-dark);
+  cursor: pointer;
+}
+.hint {
+  font: var(--text-body-small);
+  color: var(--ink-body);
+}

@@ -1,0 +1,212 @@
+/* ---------- Banner: charcoal ground, blue swoosh (Salesforce is the subject), pixel cluster ---------- */
+.banner {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-grey);
+  color: var(--on-charcoal);
+  padding: 72px 24px 88px;
+}
+.bannerInner {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.pixels {
+  position: absolute;
+  right: 4%;
+  top: 28px;
+  width: 340px;
+  max-width: 45%;
+  opacity: 0.9;
+}
+.swoosh {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -60px;
+  height: 110px;
+  background: var(--gradient-blue);
+  transform: rotate(-2.5deg);
+  transform-origin: left;
+}
+.eyebrow {
+  font: var(--text-label);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin: 0 0 var(--space-2);
+}
+.title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--on-charcoal);
+  margin: 0 0 var(--space-2);
+  max-width: 16ch;
+}
+.lede {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--ink-body);
+  max-width: 54ch;
+  margin: 0 0 var(--space-3);
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+  font: var(--text-label);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: var(--space-1);
+}
+.meter {
+  height: 6px;
+  max-width: 420px;
+  background: var(--border);
+  margin-bottom: var(--space-3);
+}
+.meterFill {
+  height: 100%;
+  background: var(--gradient-blue);
+  transition: width 0.3s ease;
+}
+.button {
+  display: inline-flex;
+  align-items: stretch;
+  background: var(--action);
+  color: var(--on-action);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 0 0 var(--space-3);
+  line-height: 48px;
+}
+.button:hover {
+  color: var(--on-action);
+  text-decoration: none;
+}
+.arrow {
+  margin-left: var(--space-3);
+  padding: 0 var(--space-2);
+  background: var(--orange-gradient-dark);
+  font-size: 22px;
+}
+
+/* ---------- Course map ---------- */
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--space-4) 24px 80px;
+}
+.intro {
+  max-width: 64ch;
+  margin-bottom: var(--space-3);
+}
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: var(--ink);
+}
+.parts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-3);
+}
+.part {
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--blue-gradient-dark);
+  padding: var(--space-3);
+  background: var(--surface);
+  margin: 0;
+}
+.partDone {
+  border-top-color: var(--green-gradient-dark);
+}
+.partHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.partNumber,
+.partMeta {
+  font: var(--text-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.partNumber {
+  color: var(--blue-gradient-dark);
+}
+.partMeta {
+  color: var(--ink-body);
+}
+.partTitle {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin: var(--space-1) 0;
+}
+.partSummary {
+  font: var(--text-body-small);
+  color: var(--ink-body);
+  margin-bottom: var(--space-2);
+}
+.lessons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+.lessons li {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  margin: 0;
+}
+.lessons a {
+  color: var(--ink);
+}
+.check {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid var(--grey-font);
+  border-radius: var(--radius-sm);
+  transform: translateY(1px);
+}
+.lessonDone .check {
+  background: var(--green-gradient-dark);
+  border-color: var(--green-gradient-dark);
+}
+.lessonDone a {
+  color: var(--ink-body);
+}
+.reset {
+  margin-top: var(--space-4);
+}
+.reset button {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--ink-body);
+  cursor: pointer;
+}
