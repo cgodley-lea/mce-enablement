@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import {course, lessonKey, totalHours, totalLessons} from '@site/src/data/course';
 import {resetAll, useProgressMap} from '@site/src/lib/progress';
 import PixelCluster from '@site/src/components/PixelCluster';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
 const allKeys = course.flatMap((p) => p.lessons.map((l) => lessonKey(p, l)));
@@ -11,6 +12,7 @@ const fmtHours = (h: number) => `${Number(h.toFixed(2))} h`;
 
 export default function Home(): ReactNode {
   const progress = useProgressMap(allKeys);
+  const logo = useBaseUrl('/img/LEA-logo-green-white.png');
   const doneCount = allKeys.filter((k) => progress[k]).length;
   const pct = Math.round((doneCount / totalLessons) * 100);
   const firstOpen = course.flatMap((p) => p.lessons.map((l) => ({p, l}))).find(({p, l}) => !progress[lessonKey(p, l)]);
@@ -21,7 +23,8 @@ export default function Home(): ReactNode {
       <header className={styles.banner} data-theme="charcoal">
         <PixelCluster className={styles.pixels} seed={11} />
         <div className={styles.bannerInner}>
-          <p className={styles.eyebrow}>ListEngage Academy · Self-Paced</p>
+          <img className={styles.logo} src={logo} alt="ListEngage Academy" />
+          <p className={styles.eyebrow}>Self-Paced Course</p>
           <h1 className={styles.title}>Marketing Cloud Engagement</h1>
           <p className={styles.lede}>
             Build LEOptical in MCE, with every lesson mapped back to the MCN and MCAE features you already know.

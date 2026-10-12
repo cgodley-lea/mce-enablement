@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Marketing Cloud Engagement Enablement',
   tagline: 'Self-paced MCE training for ListEngage Academy, built for MCAE and MCN practitioners.',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/LEA-key-icon-A.png',
 
   future: {v4: true},
 
@@ -45,7 +45,8 @@ const config: Config = {
   themeConfig: {
     colorMode: {defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false},
     navbar: {
-      title: 'ListEngage Academy · MCE Enablement',
+      title: 'MCE Enablement',
+      logo: {alt: 'ListEngage Academy', src: 'img/LEA-logo-green-black.png', href: '/'},
       items: [
         {to: '/', label: 'Course Overview', position: 'left', activeBaseRegex: '^/mce-enablement/?$'},
         {type: 'docSidebar', sidebarId: 'courseSidebar', position: 'left', label: 'Lessons'},

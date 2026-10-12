@@ -29,6 +29,12 @@
   transform: rotate(-2.5deg);
   transform-origin: left;
 }
+.logo {
+  display: block;
+  height: 64px;
+  width: auto;
+  margin: 0 0 var(--space-3);
+}
 .eyebrow {
   font: var(--text-label);
   letter-spacing: 0.12em;
