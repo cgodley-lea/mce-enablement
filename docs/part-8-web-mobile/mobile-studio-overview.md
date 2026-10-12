@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "Mobile Studio Overview"
+title: "Mobile Studio and MobileConnect"
 description: "Part 8: Web and Mobile. About 0.5 hours."
 ---
 
@@ -10,6 +10,6 @@ This lesson is planned but not written yet. Its lab and its MCN and MCAE compari
 
 ## Lab
 
-Walkthrough with screenshots (not built in the BU).
+Send a test SMS to your own phone.
 
 <Compare mcn="SMS and WhatsApp channels." mcae="SMS through partner apps." />

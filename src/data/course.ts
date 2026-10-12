@@ -116,7 +116,7 @@ export const course: Part[] = [
     summary: 'CloudPages, Smart Capture and an overview of Mobile Studio.',
     lessons: [
       {slug: 'cloudpages-smart-capture', title: 'CloudPages and Smart Capture', hours: 0.5, lab: 'Signup page that writes to a data extension', mcn: 'Landing pages and forms', mcae: 'Landing pages and form handlers'},
-      {slug: 'mobile-studio-overview', title: 'Mobile Studio Overview', hours: 0.5, lab: 'Walkthrough', mcn: 'SMS and WhatsApp channels', mcae: 'SMS through partner apps'},
+      {slug: 'mobile-studio-overview', title: 'Mobile Studio and MobileConnect', hours: 0.5, lab: 'Send a test SMS to your own phone', mcn: 'SMS and WhatsApp channels', mcae: 'SMS through partner apps'},
     ],
   },
   {
