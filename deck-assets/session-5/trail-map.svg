@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;family=Quicksand:wght@500;700&amp;display=swap');
+  .h{font-family:Lato,Arial,sans-serif;font-weight:900;letter-spacing:2px}
+  .b{font-family:Quicksand,Arial,sans-serif;font-weight:700}
+</style>
+<linearGradient id="og" x1="0" x2="1"><stop offset="0" stop-color="#f8b133"/><stop offset="1" stop-color="#e84e1b"/></linearGradient>
+</defs>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<text class="h" x="114" y="130" font-size="56" fill="#222222">YOU ARE HERE</text>
+<text class="b" x="114" y="180" font-size="26" fill="#595959">Today we leave the main trail for a loop through Automation, then rejoin it for Session 6.</text>
+<line x1="140" y1="760" x2="1030" y2="760" stroke="#005caa" stroke-width="10" stroke-linecap="round"/>
+<line x1="1030" y1="760" x2="1802" y2="760" stroke="#c7c7c7" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 22"/>
+<line x1="1822" y1="760" x2="1822" y2="690" stroke="#222222" stroke-width="4"/>
+<path d="M 1822 690 L 1862 702 L 1822 714 Z" fill="#542d89"/>
+<path d="M 1030 760 C 970 600, 780 410, 1030 400 C 1280 410, 1090 600, 1030 760" fill="none" stroke="url(#og)" stroke-width="10" stroke-linecap="round"/>
+<circle cx="1030" cy="760" r="12" fill="#ffffff" stroke="#e2752b" stroke-width="5"/>
+<circle cx="140" cy="760" r="26" fill="#005caa" stroke="#005caa" stroke-width="5"/>
+<path d="M 129 760 L 137 768 L 152 752" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="b" x="140" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 0</text>
+<text class="h" x="140" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Start Here</text>
+<circle cx="318" cy="760" r="26" fill="#005caa" stroke="#005caa" stroke-width="5"/>
+<path d="M 307 760 L 315 768 L 330 752" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="b" x="318" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 1</text>
+<text class="h" x="318" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Setup</text>
+<circle cx="496" cy="760" r="26" fill="#005caa" stroke="#005caa" stroke-width="5"/>
+<path d="M 485 760 L 493 768 L 508 752" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="b" x="496" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 2</text>
+<text class="h" x="496" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Data</text>
+<circle cx="674" cy="760" r="26" fill="#005caa" stroke="#005caa" stroke-width="5"/>
+<path d="M 663 760 L 671 768 L 686 752" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="b" x="674" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 3</text>
+<text class="h" x="674" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Content</text>
+<circle cx="852" cy="760" r="26" fill="#005caa" stroke="#005caa" stroke-width="5"/>
+<path d="M 841 760 L 849 768 L 864 752" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="b" x="852" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 4</text>
+<text class="h" x="852" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Sending</text>
+<circle cx="1030" cy="400" r="36" fill="#e2752b" stroke="#ffffff" stroke-width="6"/>
+<text class="h" x="1030" y="411" font-size="32" text-anchor="middle" fill="#222222">5</text>
+<text class="h" x="1180" y="394" font-size="34" fill="#222222">AUTOMATION</text>
+<text class="b" x="1180" y="426" font-size="20" fill="#595959">Session 5 · today's loop</text>
+<path d="M 1030 358 C 1022 340, 1004 326, 1004 306 A 26 26 0 1 1 1056 306 C 1056 326, 1038 340, 1030 358 Z" fill="#222222"/>
+<circle cx="1030" cy="306" r="9" fill="#ffffff"/>
+<rect x="1180" y="282" width="250" height="46" fill="#222222"/>
+<text class="h" x="1305" y="314" font-size="22" text-anchor="middle" fill="#ffffff">YOU ARE HERE</text>
+<circle cx="1208" cy="760" r="26" fill="#ffffff" stroke="#c7c7c7" stroke-width="5"/>
+<text class="h" x="1208" y="769" font-size="26" text-anchor="middle" fill="#595959">6</text>
+<text class="b" x="1208" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 6</text>
+<text class="h" x="1208" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Consent</text>
+<circle cx="1386" cy="760" r="26" fill="#ffffff" stroke="#c7c7c7" stroke-width="5"/>
+<text class="h" x="1386" y="769" font-size="26" text-anchor="middle" fill="#595959">7</text>
+<text class="b" x="1386" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 7</text>
+<text class="h" x="1386" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Reporting</text>
+<circle cx="1564" cy="760" r="26" fill="#ffffff" stroke="#c7c7c7" stroke-width="5"/>
+<text class="h" x="1564" y="769" font-size="26" text-anchor="middle" fill="#595959">8</text>
+<text class="b" x="1564" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 8</text>
+<text class="h" x="1564" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Web &amp; Mobile</text>
+<circle cx="1742" cy="760" r="26" fill="#ffffff" stroke="#c7c7c7" stroke-width="5"/>
+<text class="h" x="1742" y="769" font-size="26" text-anchor="middle" fill="#595959">9</text>
+<text class="b" x="1742" y="830" font-size="17" text-anchor="middle" fill="#595959">SESSION 9</text>
+<text class="h" x="1742" y="862" font-size="22" text-anchor="middle" fill="#222222" letter-spacing="0">Capstone</text>
+<circle cx="140" cy="990" r="10" fill="#005caa"/><text class="b" x="162" y="997" font-size="20" fill="#595959">Completed</text>
+<circle cx="340" cy="990" r="10" fill="#e2752b"/><text class="b" x="362" y="997" font-size="20" fill="#595959">Today</text>
+<circle cx="500" cy="990" r="9" fill="#ffffff" stroke="#c7c7c7" stroke-width="4"/><text class="b" x="522" y="997" font-size="20" fill="#595959">Up next</text>
+</svg>
